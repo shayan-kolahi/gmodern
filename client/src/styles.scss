@@ -1,0 +1,63 @@
+@use '@angular/material' as mat;@include mat.core();$panel-primary: mat.define-palette(mat.$indigo-palette);$panel-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);$panel-warn: mat.define-palette(mat.$red-palette);$panel-theme: mat.define-light-theme((color: (primary: $panel-primary, accent: $panel-accent, warn: $panel-warn, )));@include mat.all-component-themes($panel-theme);
+@import "./assets/css/Global.scss";
+@font-face {
+  font-family: 'IRANSansDNFaNum';
+  src: url('./assets/fonts/IRANSansDN/IRANSansDNFaNum.eot');
+  src: url('./assets/fonts/IRANSansDN/IRANSansDNFaNum.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/IRANSansDN/IRANSansDNFaNum.woff2') format('woff2'),
+  url('./assets/fonts/IRANSansDN/IRANSansDNFaNum.woff') format('woff'),
+  url('./assets/fonts/IRANSansDN/IRANSansDNFaNum.ttf') format('truetype'),
+  url('./assets/fonts/IRANSansDN/IRANSansDNFaNum.svg#IRANSansDNFaNum') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mikhak';
+  src: url('./assets/fonts/Mikhak/Mikhak-Bold.eot');
+  src: url('./assets/fonts/Mikhak/Mikhak-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/Mikhak/Mikhak-Bold.woff2') format('woff2'),
+  url('./assets/fonts/Mikhak/Mikhak-Bold.woff') format('woff'),
+  url('./assets/fonts/Mikhak/Mikhak-Bold.ttf') format('truetype'),
+  url('./assets/fonts/Mikhak/Mikhak-Bold.svg#Mikhak-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body *:not(.fab , .fa , .far , .fa-regular , .fa-light , .fa-solid){ 
+  font-family: 'IRANSansDNFaNum' , sans-serif !important;
+}
+a{text-decoration: none;}
+.user-select-pointer{
+  cursor: pointer
+}
+
+
+
+// angular material
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+  width: 100% !important;
+}
+.mat-form-field-wrapper{
+  padding: 0 !important;
+}
+.mat-tab-label, .mat-tab-link , .mat-body, .mat-body-1, .mat-typography .mat-body, .mat-typography .mat-body-1, .mat-typography , .mat-checkbox-layout .mat-checkbox-label{
+  font-size: 15px !important;
+}
+.font_17{
+  font-size: 17px;
+}
+.mat-form-field-suffix{
+  margin: auto 0 !important;
+}
+.mat-form-field-suffix .mat-icon{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+// angular material
+
+.toastify *{
+  direction: rtl !important;
+}
+
